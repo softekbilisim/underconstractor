@@ -5,7 +5,8 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 
 # Copy the current directory contents into the container at /usr/share/nginx/html
-COPY under_construction.html .
+COPY index.html .
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80 to the outside world
 EXPOSE 80
