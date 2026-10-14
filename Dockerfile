@@ -6,6 +6,7 @@ WORKDIR /usr/share/nginx/html
 
 # Copy the current directory contents into the container at /usr/share/nginx/html
 COPY index.html .
+COPY img ./img
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose port 80 to the outside world
